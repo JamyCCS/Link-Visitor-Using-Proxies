@@ -27,18 +27,18 @@ sys.excepthook = log_exceptions
 # Log filename based on current date and time
 log_filename = f"log_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.txt"
 
-# Custom Print Function with Logging
+# Custom Print Function
 def custom_print(*args, **kwargs):
     message = " ".join(map(str, args))
     timestamped_message = f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] {message}"
     
-    # Write to log file directly
+    # Write to log file
     with open(log_filename, "a") as log_file:
         log_file.write(timestamped_message + "\n")
     
-    # Print to console (optional, controlled by 'to_console' argument)
-    if kwargs.get("to_console", True):
-        sys.__stdout__.write(timestamped_message + "\n")  # Use original stdout to avoid recursion
+    # Print to console if stdout is available
+    if sys.__stdout__ is not None:
+        sys.__stdout__.write(timestamped_message + "\n")
 
 
 
