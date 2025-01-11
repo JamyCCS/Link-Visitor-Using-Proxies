@@ -1,0 +1,115 @@
+[2025-01-11 21:41:09] Proxy pool is empty. Fetching new proxies...
+[2025-01-11 21:41:10] Validating new proxies...
+[2025-01-11 21:41:20] Adding 6 valid proxies to the pool.
+[2025-01-11 21:41:20] Using Proxy: 27.66.73.136:10007
+[2025-01-11 21:41:51] Visited https://learn.microsoft.com/en-us/training/topics/event-challenges?wt.mc_id=studentamb_280886 with Proxy: 27.66.73.136:10007
+[2025-01-11 21:41:59] Using Proxy: 67.43.228.250:29245
+[2025-01-11 21:42:27] Visited https://learn.microsoft.com/en-us/training/topics/event-challenges?wt.mc_id=studentamb_280886 with Proxy: 67.43.228.250:29245
+[2025-01-11 21:42:33] Using Proxy: 116.98.70.85:10006
+[2025-01-11 21:43:11] Visited https://learn.microsoft.com/en-us/training/topics/event-challenges?wt.mc_id=studentamb_280886 with Proxy: 116.98.70.85:10006
+[2025-01-11 21:43:18] Using Proxy: 27.66.73.136:10004
+[2025-01-11 21:43:48] Visited https://learn.microsoft.com/en-us/training/topics/event-challenges?wt.mc_id=studentamb_280886 with Proxy: 27.66.73.136:10004
+[2025-01-11 21:43:56] Using Proxy: 67.43.227.226:2113
+[2025-01-11 21:44:26] Visited https://learn.microsoft.com/en-us/training/topics/event-challenges?wt.mc_id=studentamb_280886 with Proxy: 67.43.227.226:2113
+[2025-01-11 21:44:35] Using Proxy: 116.98.70.85:10002
+[2025-01-11 21:44:56] Retrying https://learn.microsoft.com/en-us/training/topics/event-challenges?wt.mc_id=studentamb_280886 with Proxy 116.98.70.85:10002 (1/3): Message: timeout: Timed out receiving message from renderer: 17.899
+  (Session info: MicrosoftEdge=131.0.2903.112)
+Stacktrace:
+	(No symbol) [0x00007FF60C7D6B05]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF60CAFF474+1437348]
+	sqlite3_dbdata_init [0x00007FF60CBA2DA6+643174]
+	(No symbol) [0x00007FF60C6A7528]
+	(No symbol) [0x00007FF60C6A7278]
+	(No symbol) [0x00007FF60C6A54BC]
+	(No symbol) [0x00007FF60C6A5AFF]
+	(No symbol) [0x00007FF60C6B0FF1]
+	(No symbol) [0x00007FF60C6C1B07]
+	(No symbol) [0x00007FF60C6C744A]
+	(No symbol) [0x00007FF60C6A645E]
+	(No symbol) [0x00007FF60C6A61A0]
+	(No symbol) [0x00007FF60C6C1895]
+	(No symbol) [0x00007FF60C736DFC]
+	(No symbol) [0x00007FF60C71BE03]
+	(No symbol) [0x00007FF60C6F2984]
+	(No symbol) [0x00007FF60C6F1E30]
+	(No symbol) [0x00007FF60C6F2571]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF60CAABB04+1094964]
+	(No symbol) [0x00007FF60C8132B8]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF60CAAAF43+1091955]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF60CAAAAA9+1090777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF60C8B0CB1+461569]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF60C8AC9D4+444452]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF60C8ACB19+444777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF60C8A2196+401382]
+	BaseThreadInitThunk [0x00007FFAD1D8E8D7+23]
+	RtlUserThreadStart [0x00007FFAD357FBCC+44]
+
+[2025-01-11 21:45:16] Retrying https://learn.microsoft.com/en-us/training/topics/event-challenges?wt.mc_id=studentamb_280886 with Proxy 116.98.70.85:10002 (2/3): Message: timeout: Timed out receiving message from renderer: 19.987
+  (Session info: MicrosoftEdge=131.0.2903.112)
+Stacktrace:
+	(No symbol) [0x00007FF60C7D6B05]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF60CAFF474+1437348]
+	sqlite3_dbdata_init [0x00007FF60CBA2DA6+643174]
+	(No symbol) [0x00007FF60C6A7528]
+	(No symbol) [0x00007FF60C6A7278]
+	(No symbol) [0x00007FF60C6A54BC]
+	(No symbol) [0x00007FF60C6A5AFF]
+	(No symbol) [0x00007FF60C6B0FF1]
+	(No symbol) [0x00007FF60C6C1B07]
+	(No symbol) [0x00007FF60C6C744A]
+	(No symbol) [0x00007FF60C6A645E]
+	(No symbol) [0x00007FF60C6A61A0]
+	(No symbol) [0x00007FF60C6C1895]
+	(No symbol) [0x00007FF60C736DFC]
+	(No symbol) [0x00007FF60C71BE03]
+	(No symbol) [0x00007FF60C6F2984]
+	(No symbol) [0x00007FF60C6F1E30]
+	(No symbol) [0x00007FF60C6F2571]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF60CAABB04+1094964]
+	(No symbol) [0x00007FF60C8132B8]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF60CAAAF43+1091955]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF60CAAAAA9+1090777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF60C8B0CB1+461569]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF60C8AC9D4+444452]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF60C8ACB19+444777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF60C8A2196+401382]
+	BaseThreadInitThunk [0x00007FFAD1D8E8D7+23]
+	RtlUserThreadStart [0x00007FFAD357FBCC+44]
+
+[2025-01-11 21:45:36] Retrying https://learn.microsoft.com/en-us/training/topics/event-challenges?wt.mc_id=studentamb_280886 with Proxy 116.98.70.85:10002 (3/3): Message: timeout: Timed out receiving message from renderer: 19.993
+  (Session info: MicrosoftEdge=131.0.2903.112)
+Stacktrace:
+	(No symbol) [0x00007FF60C7D6B05]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF60CAFF474+1437348]
+	sqlite3_dbdata_init [0x00007FF60CBA2DA6+643174]
+	(No symbol) [0x00007FF60C6A7528]
+	(No symbol) [0x00007FF60C6A7278]
+	(No symbol) [0x00007FF60C6A54BC]
+	(No symbol) [0x00007FF60C6A5AFF]
+	(No symbol) [0x00007FF60C6B0FF1]
+	(No symbol) [0x00007FF60C6C1B07]
+	(No symbol) [0x00007FF60C6C744A]
+	(No symbol) [0x00007FF60C6A645E]
+	(No symbol) [0x00007FF60C6A61A0]
+	(No symbol) [0x00007FF60C6C1895]
+	(No symbol) [0x00007FF60C736DFC]
+	(No symbol) [0x00007FF60C71BE03]
+	(No symbol) [0x00007FF60C6F2984]
+	(No symbol) [0x00007FF60C6F1E30]
+	(No symbol) [0x00007FF60C6F2571]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF60CAABB04+1094964]
+	(No symbol) [0x00007FF60C8132B8]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF60CAAAF43+1091955]
+	Microsoft::Applications::Events::EventProperty::empty [0x00007FF60CAAAAA9+1090777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF60C8B0CB1+461569]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF60C8AC9D4+444452]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF60C8ACB19+444777]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF60C8A2196+401382]
+	BaseThreadInitThunk [0x00007FFAD1D8E8D7+23]
+	RtlUserThreadStart [0x00007FFAD357FBCC+44]
+
+[2025-01-11 21:45:36] Failed to load https://learn.microsoft.com/en-us/training/topics/event-challenges?wt.mc_id=studentamb_280886 after 3 retries. Skipping.
+[2025-01-11 21:45:38] Proxy pool is empty. Fetching new proxies...
+[2025-01-11 21:45:39] Validating new proxies...
+[2025-01-11 21:46:13] Adding 5 valid proxies to the pool.
+[2025-01-11 21:46:13] Using Proxy: 134.209.174.190:8888

@@ -149,31 +149,34 @@ def browse_with_proxy(proxy, links):
     finally:
         driver.quit()  # Always close the browser
 
-# Main Execution Loop
+
 async def main():
     links = load_links()
-    custom_print("Fetching proxies...")
-    proxies = await fetch_proxies()
-
-    custom_print("Validating proxies...")
-    valid_proxies = await validate_proxies(proxies)
-
-    if not valid_proxies:
-        custom_print("No valid proxies found. Exiting.")
-        return
-
-    custom_print(f"Adding {len(valid_proxies)} valid proxies to the pool.")
     proxy_pool = ProxyPool()
-    proxy_pool.add_proxies(valid_proxies)
 
-    while proxy_pool.size() > 0:
+    while True:  # Main loop to keep the program running
+        if proxy_pool.size() == 0:  # If no proxies are available, fetch and validate new ones
+            custom_print("Proxy pool is empty. Fetching new proxies...")
+            proxies = await fetch_proxies()
+            
+            custom_print("Validating new proxies...")
+            valid_proxies = await validate_proxies(proxies)
+
+            if not valid_proxies:
+                custom_print("No valid proxies found. Retrying in 30 seconds...")
+                await asyncio.sleep(30)  # Wait before retrying
+                continue
+
+            custom_print(f"Adding {len(valid_proxies)} valid proxies to the pool.")
+            proxy_pool.add_proxies(valid_proxies)
+
         proxy = proxy_pool.get_proxy()
         if proxy:
             custom_print(f"Using Proxy: {proxy}")
             browse_with_proxy(proxy, links)
         else:
-            custom_print("No proxies available. Exiting.")
-            break
+            custom_print("No proxies available. Retrying...")
+            await asyncio.sleep(10)  # Small delay before retrying
 
 if __name__ == "__main__":
     asyncio.run(main())
